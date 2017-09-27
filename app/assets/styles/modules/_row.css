@@ -1,0 +1,47 @@
+
+.row {
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  &--gutters {
+    margin-right: -65px;
+  }
+
+  &--gutters > div {
+    padding-right: 65px;
+  }
+
+  &__b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 800px) {
+
+    &__b-margin-until-medium {
+      margin-bottom: 0;
+    }
+
+    &__medium-4 {
+      float: left;
+      width: 33.33%;
+    }
+
+    &__medium-4--larger {
+      width: 37%;
+    }
+
+    &__medium-8{
+        float: left;
+        width: 66.66%;
+    }
+
+    &__medium-8--smaller {
+      width: 63%;
+    }
+  }
+
+}

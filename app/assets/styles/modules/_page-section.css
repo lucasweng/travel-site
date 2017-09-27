@@ -1,0 +1,12 @@
+.page-section {
+  padding: 1.2rem 0;
+
+  @media (min-width: 800px) {
+    padding: 4.5rem 0;
+  }
+
+  &--blue {
+    background-color: $mainBlue;
+    color: #FFF;
+  }
+}
