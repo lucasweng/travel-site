@@ -59,10 +59,6 @@
       width: 50%;
     }
 
-    &__medium-6--larger {
-      width: 37%
-    }
-
     &__medium-8{
         float: left;
         width: 66.66%;
@@ -91,10 +87,6 @@
     &__large-6 {
       float: left;
       width: 50%;
-    }
-
-    &__large-6--larger {
-      width: 37%
     }
 
     &__large-8{
