@@ -1,7 +1,8 @@
 .generic-content-container {
   p {
+    font-weight: 300;
     line-height: 1.65;
-    margin: 1.8rem 0;
+    margin: 0 0 1.8rem 0;
 
     @media (min-width: 530px) {
       font-size: 1.125rem;
