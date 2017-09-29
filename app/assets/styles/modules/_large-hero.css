@@ -7,12 +7,17 @@
   }
 
   &__text-content {
+    padding-top: 88px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     width: 100%;
     text-align: center;
+
+    @media (min-width: 800px) {
+      padding-top: 60px;
+    }
   }
 
   &__title {

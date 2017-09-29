@@ -14,6 +14,10 @@ gulp.task('watch', function() {
     browserSync.reload();
   });
   gulp.watch('./app/assets/styles/**/*.css', ['cssInject']);
+
+  gulp.watch('./app/assets/scripts/**/*.js', function() {
+    gulp.start('scriptsRefresh');
+  });
 });
 
 //take the content of our compiled css file
@@ -28,3 +32,7 @@ gulp.task('cssInject', ['styles'], function() {
     .pipe(browserSync.stream());
     //make the content piped and available in the browser
 });
+
+gulp.task('scriptsRefresh', ['scripts'], function() {
+  browserSync.reload();
+})

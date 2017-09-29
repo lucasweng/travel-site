@@ -1,0 +1,126 @@
+.site-header {
+  position: absolute;
+  padding: 10px 0;
+  width: 100%;
+  z-index: 2;
+  transition: background-color .3s ease-out;
+
+  &--is-expanded {
+    background-color: rgba($mainBlue, .55);
+  }
+
+  @media (min-width: 800px) {
+    background-color: rgba($mainBlue, 0.3);
+  }
+
+  &__btn-container {
+    @media (min-width: 800px) {
+      float:right;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(.8);
+    transform-origin: 50% 0%;
+    background-color: $mainBlue;
+    padding: 25px 36px;
+
+    @media (min-width: 800px) {
+      left: auto;
+      transform: translateX(0);
+    }
+  }
+
+  &__logo__graphic {
+    text-indent: -9999px;
+  }
+
+  &__menu-icon {
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right:10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #FFF;
+      transform-origin: 0 0;
+      transition: transform .3s ease-out;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #FFF;
+      transition: all .3s ease-out;
+      transform-origin: 0 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #FFF;
+      transform-origin: 0 100%;
+      transition: transform .3s ease-out;
+    }
+
+    @media (min-width: 800px) {
+      display: none;
+    }
+  }
+
+  &__menu-icon--close-x {
+    &::before {
+      transform: rotate(45deg) scaleX(1.25);
+    }
+
+    .site-header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
+  }
+
+  &__menu-content {
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+    position: relative;
+    z-index: -10;
+    padding-top: 90px;
+    text-align: center;
+
+    @media (min-width: 800px) {
+      opacity: 1;
+      z-index: 1;
+      padding-top: 0;
+      transform: scale(1);
+    }
+
+    &--is-visible {
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
+    }
+  }
+}
