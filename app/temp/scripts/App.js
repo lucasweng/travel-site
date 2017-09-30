@@ -11201,6 +11201,7 @@ class RevealOnScroll {
 
 class StickyHeader {
   constructor() {
+    this.lazyImages = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".lazyload");
     this.siteHeader = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header");
     this.headerTriggerElement = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".large-hero__title");
     this.createHeaderWaypoint();
@@ -11208,6 +11209,13 @@ class StickyHeader {
     this.headerLinks = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".primary-nav a");
     this.createPageSectionWaypoints();
     this.addSmoothScrolling();
+    this.refreshWaypoints();
+  }
+
+  refreshWaypoints() {
+    this.lazyImages.on('load', function() {
+      Waypoint.refreshAll();
+    });
   }
 
   addSmoothScrolling() {

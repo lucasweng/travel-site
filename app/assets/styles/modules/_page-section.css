@@ -32,8 +32,10 @@
     background-color: #E0E6EF;
 
     @media (min-width: 1010px) {
-      background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-      background-size: cover;
+      &.lazyloaded {
+        background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+        background-size: cover;
+      }
     }
   }
 }
