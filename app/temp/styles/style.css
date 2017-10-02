@@ -710,7 +710,7 @@ a {
 
 @media (min-width: 1010px) {
       .page-section--testimonials.lazyloaded {
-        background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+        background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
         background-size: cover;
       }
     }
@@ -875,14 +875,14 @@ a {
 
 @media (min-width: 800px) {
 
-.row--equal-height-at-medium {
+.flexbox .row--equal-height-at-medium {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex
   }
     }
 
-.row--equal-height-at-medium > div {
+.flexbox .row--equal-height-at-medium > div {
       float: none;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -891,14 +891,14 @@ a {
 
 @media (min-width: 1010px) {
 
-.row--equal-height-at-large {
+.flexbox .row--equal-height-at-large {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex
   }
     }
 
-.row--equal-height-at-large > div {
+.flexbox .row--equal-height-at-large > div {
       float: none;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1060,79 +1060,83 @@ a {
 Instead edit gulp/templats/sprite */
 
 .icon {
-      background-image: url('/assets/images/sprites/sprite-69f19c2e.svg');
+      background-image: url('/assets/images/sprites/sprite-e79e95cc.svg');
+    }
+
+.no-svg .icon {
+      background-image: url('/assets/images/sprites/sprite-e79e95cc.png');
     }
 
 .icon--clear-view-escapes {
-    width: 142.4px;
-    height: 59.53px;
+    width: 144.4px;
+    height: 61.53px;
     background-position: 0 0;
   }
 
 .icon--comment {
-    width: 64px;
-    height: 64px;
-    background-position: 99.70443349753694% 0;
+    width: 66px;
+    height: 66px;
+    background-position: 99.71014492753623% 0;
   }
 
 .icon--facebook {
-    width: 21.23px;
-    height: 42.01px;
-    background-position: 26.040607071652357% 45.795830448496034%;
+    width: 23.23px;
+    height: 44.01px;
+    background-position: 26.424310365536293% 45.92133741323979%;
   }
 
 .icon--fire {
-    width: 56px;
-    height: 64px;
-    background-position: 0 99.56481481481481%;
+    width: 58px;
+    height: 66px;
+    background-position: 0 99.58035714285714%;
   }
 
 .icon--globe {
-    width: 64px;
-    height: 64px;
-    background-position: 27.586206896551722% 99.56481481481481%;
+    width: 66px;
+    height: 66px;
+    background-position: 28.019323671497585% 99.58035714285714%;
   }
 
 .icon--instagram {
-    width: 42.01px;
-    height: 42.01px;
-    background-position: 63.2917018534157% 49.234556504346486%;
+    width: 44.01px;
+    height: 44.01px;
+    background-position: 63.059522249879905% 49.25740726919919%;
   }
 
 .icon--mail {
-    width: 64px;
-    height: 48px;
-    background-position: 0 48.00806451612903%;
+    width: 66px;
+    height: 50px;
+    background-position: 0 48.0703125%;
   }
 
 .icon--rain {
-    width: 64px;
-    height: 64px;
-    background-position: 99.70443349753694% 59.25925925925926%;
+    width: 66px;
+    height: 66px;
+    background-position: 99.71014492753623% 58.92857142857143%;
   }
 
 .icon--star {
-    width: 64px;
-    height: 64px;
-    background-position: 59.11330049261084% 99.56481481481481%;
+    width: 66px;
+    height: 66px;
+    background-position: 59.90338164251208% 99.58035714285714%;
   }
 
 .icon--twitter {
-    width: 51.78px;
-    height: 42.06px;
-    background-position: 94.04330452560171% 98.50700323226104%;
+    width: 53.78px;
+    height: 44.06px;
+    background-position: 94.15199343125627% 98.55159026429745%;
   }
 
 .icon--wifi {
-    width: 60px;
-    height: 64px;
-    background-position: 68.79227053140097% 0;
+    width: 62px;
+    height: 66px;
+    background-position: 68.43601895734596% 0;
   }
 
 .icon--youtube {
-    width: 34.75px;
-    height: 42px;
-    background-position: 36.69752421959096% 45.792307692307695%;
+    width: 36.75px;
+    height: 44px;
+    background-position: 37.76931216931217% 45.917910447761194%;
   }
 
 .site-footer {
@@ -1214,8 +1218,8 @@ Instead edit gulp/templats/sprite */
   }
 
       .site-header--dark .site-header__logo {
-        -webkit-transform: scale(.56);
-                transform: scale(.56);
+        -webkit-transform: scale(.55);
+                transform: scale(.55);
       }
     }
 

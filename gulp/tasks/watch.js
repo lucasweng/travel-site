@@ -33,6 +33,7 @@ gulp.task('cssInject', ['styles'], function() {
     //make the content piped and available in the browser
 });
 
+// reload the page every time scripts.js is run
 gulp.task('scriptsRefresh', ['scripts'], function() {
   browserSync.reload();
 })
