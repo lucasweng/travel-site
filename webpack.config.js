@@ -2,7 +2,6 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    polyfill: "babel-polyfill",
     App: "./app/assets/scripts/App.js",
     Vendor: "./app/assets/scripts/Vendor.js"
   },
@@ -13,13 +12,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: '/\.js$/',
+        test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
-        query: {
-          plugins: ['transform-runtime'],
-          preset: ['env']
-        }
+        loader: "babel-loader"
       }
     ]
   }
