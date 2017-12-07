@@ -58,7 +58,7 @@ It will open a new tab in your browser and run the website. Should it not open, 
 
 ### See the website locally with other devices
 
-The previous command will run Browsersyn, and you will find the following in the terminal:
+The previous command will run Browsersync, and you will find the following in the terminal:
 
 ```sh
 [Browsersync] Access URLs:
