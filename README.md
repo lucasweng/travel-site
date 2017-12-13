@@ -74,6 +74,10 @@ The previous command will run Browsersync, and you will find the following in th
 
 You can view the website in synchronised action across all your devices with the External URL.
 
+### Comments in code
+
+Some comments in the source code are course notes and therefore might seem unnecessary from a developer's point of view.
+
 ## Built with
 
 ### Front-end
