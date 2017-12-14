@@ -4,12 +4,11 @@
 
 ## Live Demo
 
- To see the website in action, go to [https://lucasweng.github.io/travel-site/](https://lucasweng.github.io/travel-site/)
+ To see the website in action, please go to [https://lucasweng.github.io/travel-site/](https://lucasweng.github.io/travel-site/)
 
  or
 
  To run that demo on your own computer, please follow the instructions in [Getting Started](https://github.com/lucasweng/travel-site#getting-started)
-
 
 ## Features
 
@@ -49,6 +48,12 @@ git clone https://github.com/lucasweng/travel-site.git
 npm install
 ```
 
+or
+
+```sh
+yarn install
+```
+
 ### Start the website
 
 ```sh
@@ -76,7 +81,7 @@ You can view the website in synchronised action across all your devices with the
 
 ### Comments in code
 
-Some comments in the source code are course notes and therefore might seem unnecessary from a developer's point of view.
+Some comments in the source code are course notes and therefore might not seem necessary from a developer's point of view.
 
 ## Built with
 
