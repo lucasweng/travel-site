@@ -33,7 +33,7 @@
 * Reveal page contents on scroll
 
 * Smooth page scroll to an anchor on the same page
-
+ 
 ## Getting Started
 
 ### Clone or download this repository
@@ -104,6 +104,11 @@ Some comments in the source code are course notes and therefore might not seem n
 ### Testing
 
 * [browsersync](https://www.browsersync.io/)
+
+### Analytics
+
+* [Google Analytics](https://www.google.com/analytics/)
+* [Hotjar](https://www.hotjar.com/)
 
 ## License
 
